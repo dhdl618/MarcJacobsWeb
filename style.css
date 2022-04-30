@@ -1,0 +1,331 @@
+body{
+    margin: 0;
+    height: 4000px;
+}
+
+section{
+    height: 1500px;
+    width: 1920px;
+    background: url(./mountain.jpg) fixed;
+}
+
+.rainPerfume{
+    /*absolute 절대적인 이란 뜻 (화면에 절대적 >> 화면의 왼쪽상단을 (0,0) 으로 찍음)*/
+    position: absolute;
+    top: 1690px;
+    right: 10px;
+    animation: photo1Appear 2s;
+}
+
+.daisyPerfume{
+    position: absolute;
+    top: 2290px;
+    left: 10px;
+    animation: photo2Appear 2s;
+}
+
+.rain{
+    position: absolute;
+    top: 1530px;
+    animation: photo1Appear 2s;
+}
+
+.daisy{
+    position: absolute;
+    top: 2150px;
+    animation: photo2Appear 2s;
+    right: 0%;
+}
+
+.mainTxt{
+    font-size: 5em;
+    top: 550px;
+    width: 300px;
+    color: rgb(253, 181, 219);
+    font-family: sans-serif;
+    position: absolute;
+    left: 300px;
+    animation: h1No 2s forwards;
+}
+
+h2{
+    font-size: 7em;
+    top: 100px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    position: absolute;
+    text-align: center;
+    animation: h2Repeat 0.8s ease-out alternate infinite;
+}
+
+.mjRainH4{
+    position: absolute;
+    font-size: 2em;
+    top: 1700px;
+    color: rgb(0, 107, 156);
+    right: 700px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.mjDaisyH4{
+    position: absolute;
+    font-size: 2em;
+    top: 2310px;
+    color: rgb(124, 75, 0);
+    left: 400px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* rain */
+.rainTop{
+    position: absolute;
+    font-size: large;
+    top: 1723px;
+    color: rgb(0, 125, 184);
+    right: 400px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.rainMiddle{
+    position: absolute;
+    font-size: large;
+    top: 1795px;
+    color: rgb(0, 125, 184);
+    right: 387px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.rainBase{
+    position: absolute;
+    font-size: large;
+    top: 1867px;
+    color: rgb(0, 125, 184);
+    right: 471px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* daisy */
+.daisyTop{
+    position: absolute;
+    font-size: large;
+    top: 2335px;
+    color: rgb(158, 95, 0);
+    left: 640px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.daisyMiddle{
+    position: absolute;
+    font-size: large;
+    top: 2407px;
+    color: rgb(158, 95, 0);
+    left: 640px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.daisyBase{
+    position: absolute;
+    font-size: large;
+    top: 2479px;
+    color: rgb(158, 95, 0);
+    left: 640px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* 로그인 버튼 구현 */
+.login{
+    position: absolute;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.952);
+    font-family: Arial, Helvetica, sans-serif;
+    right: 3%;
+    top: 20px;
+    background-color: #f0ecfc;
+    background-image: linear-gradient(315deg, #000000 0%, #0e0813 74%);  /* 그라데이션 */
+    line-height: 20px;
+    padding: 0;                          /* 테두리(border)와 내용(content) 사이 공간 삭제 */
+    border: 1px solid transparent;       /* 테두리 1px */
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+}
+
+.login:hover {
+    font-size: 20px;
+    cursor:pointer;
+    top: 19px;
+    right: 50px;
+}
+
+.mjRainH1{
+    position: absolute;
+    top: 1500px;
+    left: 100px;
+    color: rgb(24, 27, 56);
+    font-size: 7em;
+    width: 800px;
+}
+
+.mjDaisyH1{
+    position: absolute;
+    top: 2090px;
+    right: 20px;
+    color: rgb(255, 81, 0);
+    font-size: 7em;
+    width: 800px;
+}
+
+/* h1 애니메이션 */
+@keyframes h1Appear {
+    from{
+        left: -100px;
+        opacity: 0;
+    }
+    to{
+        left: 300px;
+        opacity: 1;
+    }
+}
+
+@keyframes h1Disappear {
+    from{
+        left: 300px;
+        opacity: 1;
+    }
+    to{
+        left: -100px;
+        opacity: 0;
+    }
+}
+
+@keyframes h1No {
+    0%{
+        left: -100px;
+        opacity: 0;
+    }
+    100%{
+        left: -100px;
+        opacity: 0;
+    }
+}
+
+
+/* h2 애니메이션 */
+@keyframes h2Repeat {
+    from{
+        margin-left: 0%;
+        opacity: 0;
+    }
+    to{
+        margin-right: 0%;
+        opacity: 1;
+    }
+}
+
+/* h4 애니메이션 */
+/* @keyframes h4Appear {
+    from{
+        right: 650px;
+        opacity: 0;
+    }
+    to{
+        right: 650px;
+        opacity: 1;
+    }
+}
+
+@keyframes h4Disappear {
+    from{
+        left: 300px;
+        opacity: 1;
+    }
+    to{
+        left: -100px;
+        opacity: 0;
+    }
+} */
+
+
+/* h5 (rain) 애니메이션 */
+/* @keyframes rainTopAppear {
+    from{
+        right: 350px;
+        opacity: 0;
+    }
+    to{
+        right: 350px;
+        opacity: 1;
+    }
+}
+
+@keyframes rainMiddleAppear {
+    from{
+        right: 337px;
+        opacity: 0;
+    }
+    to{
+        right: 337px;
+        opacity: 1;
+    }
+}
+
+@keyframes rainBottomAppear {
+    from{
+        right: 421px;
+        opacity: 0;
+    }
+    to{
+        right: 421px;
+        opacity: 1;
+    }
+} */
+
+
+/* photo1 애니메이션 */
+@keyframes photo1Appear {
+    from{
+        margin-left: 0%;
+        opacity: 0.4;
+    }
+    to{
+        margin-right: 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes photo1Disappear {
+    from{
+        margin-right: 0%;
+        opacity: 1;
+    }
+    to{
+        margin-right: 0%;
+        opacity: 0.4;
+    }
+}
+
+
+/* photo2 애니메이션 */
+@keyframes photo2Appear {
+    from{
+        margin-right: 0%;
+        opacity: 0.4;
+    }
+    to{
+        margin-right: 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes photo2Disappear {
+    from{
+        margin-right: 0%;
+        opacity: 1;
+    }
+    to{
+        margin-right: 0%;
+        opacity: 0.4;
+    }
+}
