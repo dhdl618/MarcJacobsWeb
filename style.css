@@ -27,12 +27,16 @@ section{
 .rain{
     position: absolute;
     top: 1530px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     animation: photo1Appear 2s;
 }
 
 .daisy{
     position: absolute;
     top: 2150px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     animation: photo2Appear 2s;
     right: 0%;
 }
